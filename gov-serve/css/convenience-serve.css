@@ -1,0 +1,97 @@
+/*main  开始*/
+#main{
+    width: 100%;
+    height: auto;
+    background-image: url("../images/bg_main.jpg");
+}
+#main-big{
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+}
+#main-top{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    top: 10px;
+    left: 3px;
+}
+#main-top span{
+    font-size: 13px;
+}
+#all-classify{
+    width: 240px;
+    height: 538px;
+    position: absolute;
+    left: 3px;
+    top: 33px;
+}
+.classify-title{
+    width: 240px;
+    height: 42px;
+    font-size: 18px;
+    color: white;
+    line-height: 42px;
+    text-align: center;
+    background-color: #1c92ff;
+}
+.classify-list li{
+    width: 240px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid #e7e7e7;
+    cursor: pointer;
+}
+#hot-server{
+    width: 735px;
+    height: 350px;
+    position: absolute;
+    top: 33px;
+    right: 5px;
+    border: 1px solid #e7e7e7;
+    color: #1492ff;
+}
+.hot-server-title{
+    width: 731px;
+    height: 39px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 39px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.hot-server-list{
+    width: 740px;
+    height: 310px;
+}
+.hot-server-list li{
+    width: 146px;
+    height: 155px;
+    float: left;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+}
+.hot-server-list li img{
+    position: absolute;
+    display: block;
+    top: 40px;
+    left: 50px;
+}
+.list-text{
+    position: absolute;
+    top: 102px;
+    text-align: center;
+    width: 146px;
+    height: 30px;
+}
+.list-text a{
+    line-height: 30px;
+    font-size: 16px;
+    color: black;
+}
+/*main  结束*/

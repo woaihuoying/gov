@@ -1,0 +1,380 @@
+/*main  开始*/
+#main{
+    background-image: url("../images/bg_main.jpg");
+
+}
+#main-box{
+    width: 1000px;
+    height: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+.location{
+    width: 200px;
+    height: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+}
+.gr-information{
+    position: absolute;
+    top: 35px;
+    width: 248px;
+    height: 670px;
+    background-color: white;
+}
+.user-info{
+    position: absolute;
+    top: 5px;
+    width: 248px;
+    height: 650px;
+}
+.user-info-text1{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    color: #6287cd;
+    border-bottom: 1px solid #cccccc;
+}
+.user-info-text2{
+    width: 110px;
+    height: 40px;
+    float: right;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #cccccc;
+}
+.user-info-text2 a{
+    color: black;
+    opacity: 0.6;
+}
+.gr-pic{
+    position: absolute;
+    top: 95px;
+    left: 78px;
+}
+.gr-pic img{
+    width: 90px;
+    height: 90px;
+}
+.hello{
+    width: 248px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    top: 205px;
+    font-size: 23px;
+    border-bottom: 1px solid #cccccc;
+}
+.list-info{
+    position: absolute;
+    top: 260px;
+}
+.list-info li{
+    padding-left: 10px;
+    width: 238px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 45px;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+}
+.list-info li a{
+    color: black;
+}
+.change-password{
+    float: right;
+    margin-right: 10px;
+
+}
+
+
+
+#amend-favicon{
+    width: 120px;
+    position: absolute;
+    left: 72px;
+    top: 12px;
+}
+#butt-fav{
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+.info-time{
+    text-align: center;
+}
+.info-time p{
+    font-size: 12px;
+    opacity: 0.5;
+}
+.user-server{
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    width: 730px;
+    height: 180px;
+    background-color: white;
+}
+.gr-server-text{
+    width: 700px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 45px;
+    margin-left: 10px;
+    color: #1492ff;
+    font-weight: 700;
+    border-bottom: 1px solid #cccccc;
+}
+.user-list-server li{
+    width: 108px;
+    height: 135px;
+    float: left;
+    margin-right: 35px;
+    text-align: center;
+}
+.user-list-server li a{
+    display: block;
+    width: 108px;
+    height: 40px;
+    line-height: 40px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+.pic1{
+    background-image: url('../images/50.png');
+    background-repeat:no-repeat;
+    background-position: 0 -70px;
+    width: 100px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+.pic2{
+    background-image: url('../images/51.png');
+    background-repeat:no-repeat;
+    background-position: 0 -70px;
+    width: 100px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+.pic3{
+    background-image: url('../images/52.png');
+    background-repeat:no-repeat;
+    background-position: 0 -70px;
+    width: 100px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+.pic4{
+    background-image: url('../images/53.png');
+    background-repeat:no-repeat;
+    background-position: 0 -70px;
+    width: 100px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+.pic5{
+    background-image: url('../images/54.png');
+    background-repeat:no-repeat;
+    background-position: 0 -70px;
+    width: 100px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+.pic1:hover{
+    background-image: url('../images/50.png');
+    background-repeat:no-repeat;
+    background-position: 0 0;
+}
+.pic2:hover{
+    background-image: url('../images/51.png');
+    background-repeat:no-repeat;
+    background-position: 0 0;
+}
+.pic3:hover{
+    background-image: url('../images/52.png');
+    background-repeat:no-repeat;
+    background-position: 0 0;
+}
+.pic4:hover{
+    background-image: url('../images/53.png');
+    background-repeat:no-repeat;
+    background-position: 0 0;
+}
+.pic5:hover{
+    background-image: url('../images/54.png');
+    background-repeat:no-repeat;
+    background-position: 0 0;
+}
+.user-list-server li a:hover{
+    color: #1492ff;
+}
+.my-server{
+    position: absolute;
+    top: 230px;
+    right: 5px;
+    background-color: white;
+    width: 728px;
+    height: 380px;
+}
+.my-server-text{
+    width: 728px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid #1492ff;
+    font-weight: 500;
+}
+.my-server-text p{
+    width: 104px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.my-server-text a{
+    float: right;
+    margin-right: 10px;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 40px;
+}
+.my-server-text p:hover{
+    background-color: #1492ff;
+}
+.state{
+    width: 726px;
+    height: 350px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    position: relative;
+}
+.state-div{
+    width: 726px;
+    height: 40px;
+    background-color: #e8f4ff;
+}
+.state-list1,.state-list2,.state-list3{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-size: 16px;
+    padding-left: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+.show-thing{
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+}
+.show-thing li{
+    width: 715px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.show-thing-list2{
+    position: absolute;
+    left: 160px;
+}
+.show-thing-list3{
+    position: absolute;
+    right: 50px;
+}
+
+.my-foot{
+    position: absolute;
+    width: 248px;
+    height: 210px;
+    background-color: white;
+    bottom: 20px;
+}
+.my-foot div{
+    width: 120px;
+    height: 50px;
+    text-align: center;
+}
+.my-foot-text1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #3366cc;
+    float: left;
+    line-height: 50px;
+}
+.my-foot-text2{
+    font-size: 15px;
+    opacity: 0.6;
+    float: right;
+    line-height: 50px;
+    margin-right: -20px;
+}
+/*用户收藏*/
+.my-collect{
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    background-color: white;
+    width: 728px;
+    height: 300px;
+}
+.my-collect-text{
+    width: 728px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid #1492ff;
+}
+.my-collect-text p{
+    width: 104px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.my-collect-text a{
+    float: right;
+    margin-right: 10px;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 40px;
+}
+.collect-list li{
+    width: 710px;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+    font-size: 14px;
+    line-height: 50px;
+    padding-left: 15px;
+    position: relative;
+}
+.collect-list1,.collect-list2{
+    font-size: 14px;
+}
+.collect-list2{
+    position: absolute;
+    left: 160px;
+}
+.delete-collect{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+/*main  结束*/

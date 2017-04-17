@@ -1,0 +1,309 @@
+/*main  开始*/
+#main{
+    background-image: url("../images/bg_main.jpg");
+
+}
+#main-box{
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+.location{
+    width: 220px;
+    height: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+}
+.gr-information{
+    position: absolute;
+    top: 35px;
+    width: 248px;
+    height: 600px;
+    background-color: white;
+}
+.user-info{
+    position: absolute;
+    top: 5px;
+    width: 248px;
+    height: 650px;
+}
+.user-info-text1{
+    width: 248px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    color: #6287cd;
+    border-bottom: 1px solid #cccccc;
+}
+.gr-pic{
+    position: absolute;
+    top: 95px;
+    left: 78px;
+}
+.gr-pic img{
+    width: 90px;
+    height: 90px;
+}
+.hello{
+    width: 248px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    top: 205px;
+    font-size: 23px;
+    border-bottom: 1px solid #cccccc;
+}
+.amend-info{
+    width: 248px;
+    height: 252px;
+    position: absolute;
+    top: 280px;
+}
+.amend-info li{
+    width: 248px;
+    height: 35px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 35px;
+    opacity: 0.6;
+    border-bottom: 1px solid #e7e7e7;
+}
+.amend-info li:hover{
+    background-color: #badeff;
+    cursor: pointer;
+}
+
+.main-amend{
+    width: 730px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    right: 3px;
+    top: 34px;
+    border: 1px solid #e7e7e7;
+}
+.main-amend-text{
+    font-size: 16px;
+    color: #029feb;
+    width: 722px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-left: 10px;
+}
+.amend-list{
+    width: 726px;
+    height: 510px;
+}
+.amend-list li{
+    width: 726px;
+    height: 50px;
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 50px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 10px;
+    position: relative;
+}
+.amend-list li img{
+    position: absolute;
+    top: 13px;
+}
+.list-info1{
+    position: absolute;
+    left: 50px;
+}
+.list-info2{
+    position: absolute;
+    left: 150px;
+}
+.list-info3{
+    position: absolute;
+    right: 20px;
+}
+
+#edit-info{
+    width: 722px;
+    height: 510px;
+}
+.edit-info-form li{
+    width: 722px;
+    height: 50px;
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 50px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 10px;
+    position: relative;
+}
+.edit-info1{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    left: 90px;
+    top: 10px;
+    outline: none;
+    border: 1px solid #e7e7e7;
+}
+.edit-info-boy{
+    position: absolute;
+    left: 120px;
+    top: 18px;
+}
+.edit-info-girl{
+    position: absolute;
+    left: 180px;
+    top: 18px;
+}
+.boy{
+    position: absolute;
+    left: 100px;
+}
+.girl{
+    position: absolute;
+    left: 160px;
+}
+.edit-butt{
+    color: white;
+    background-color: #0099e2;
+    cursor: pointer;
+}
+.pass-amend-text{
+    float: right;
+    margin-right: 20px;
+}
+/*收藏*/
+#user-collect{
+    width: 730px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    right: 3px;
+    top: 34px;
+    border: 1px solid #e7e7e7;
+}
+.user-collect-text{
+    font-size: 16px;
+    color: #029feb;
+    width: 722px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-left: 10px;
+}
+.collect-list li{
+    width: 710px;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+    font-size: 14px;
+    line-height: 50px;
+    padding-left: 15px;
+    position: relative;
+}
+.collect-list1,.collect-list12{
+    font-size: 14px;
+}
+.collect-list2{
+    position: absolute;
+    left: 160px;
+}
+.delete-collect{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+.collect-page-number{
+    width: 725px;
+    height: 50px;
+    bottom: 15px;
+    position: absolute;
+}
+.collect-page-number1{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    left: 290px;
+    cursor: pointer;
+}
+.collect-page-number2{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    left: 370px;
+    cursor: pointer;
+}
+.collect-page-number li:hover{
+    background-color: #f2f2f2;
+}
+
+/*办件*/
+#my-things{
+    width: 730px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    right: 3px;
+    top: 34px;
+    border: 1px solid #e7e7e7;
+}
+.my-things-text{
+    font-size: 16px;
+    color: #029feb;
+    width: 722px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-left: 10px;
+}
+.state-div{
+    width: 729px;
+    height: 40px;
+    background-color: #badeff;
+    margin-top: 10px;
+}
+.state-list1,.state-list2,.state-list3{
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-size: 16px;
+    padding-left: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+.my-things-list{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 95px;
+}
+.my-things-list li{
+    width: 715px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.show-thing-list2{
+    position: absolute;
+    left: 160px;
+}
+.show-thing-list3{
+    position: absolute;
+    right: 50px;
+}
+/*main  结束*/
+
+

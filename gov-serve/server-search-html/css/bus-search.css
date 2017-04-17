@@ -1,0 +1,121 @@
+main{
+    width: 100%;
+    height: auto;
+}
+a:hover{
+    text-decoration: none;
+}
+#main-box{
+    width: 1000px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+}
+.main-top-text{
+    width: 1000px;
+    height: 60px;
+    background-color: #eeeeee;
+}
+.main-top-text span{
+    font-size: 14px;
+    line-height: 60px;
+}
+.main-img{
+    width: 1000px;
+    height: 170px;
+}
+.form-search{
+    width: 430px;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+.form-search span{
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+}
+.search-text{
+    border: 1px solid #cccccc;
+    width: 280px;
+    height: 45px;
+    outline: none;
+    position: absolute;
+    right: 2px;
+    font-size: 16px;
+    border-radius: 2px;
+    top: 3px;
+}
+.search-butt{
+    width: 280px;
+    height: 45px;
+    outline: none;
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    right: 2px;
+    background-color: #029feb;
+    top: 70px;
+    border-style: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.search-result{
+    width: 1000px;
+    height: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.search-result-text{
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding-left: 100px;
+}
+.search-result-list{
+    width: 850px;
+    height: auto;
+    /*position: absolute;*/
+    margin-left: 170px;
+}
+.search-result-list li{
+    width: 850px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+.search-result-list:first-child{
+    border-bottom: 1px solid #eeeeee;
+}
+.name1{
+    width: 210px;
+    height: 38px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 38px;
+    float: left;
+}
+.tel1{
+    width: 210px;
+    height: 38px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 38px;
+    float: left;
+}
+.adds1{
+    width: 400px;
+    height: 38px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 38px;
+    float: left;
+}

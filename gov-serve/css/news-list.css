@@ -1,0 +1,65 @@
+/*main  开始*/
+#main{
+    width: 100%;
+    height: auto;
+}
+#main-box{
+    width: 1000px;
+    height: 610px;
+    margin: 0 auto;
+    position: relative;
+}
+.location{
+    width: 220px;
+    height: 20px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+#news-list{
+    width: 1000px;
+    height: 510px;
+    background-color: white;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.news-info{
+    width: 800px;
+    height: 615px;
+    margin: 0 auto;
+}
+.news-info li{
+    width: 800px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px dashed #e7e7e7;
+}
+.news-info p{
+    float: right;
+    opacity: 0.6;
+}
+.page-number{
+    width: 745px;
+    height: 35px;
+    position: absolute;
+    right: 5px;
+    bottom: 60px;
+}
+.page-number-list li{
+    width: 38px;
+    height: 30px;
+    margin-right: 20px;
+    float: left;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 15%;
+}
+.page-number-list li:hover{
+    background-color: #e2e2d3;
+}
+.page-number-list li a{
+    font-size: 14px;
+    line-height: 30px;
+    color: black;
+}
+/*main  结束*/

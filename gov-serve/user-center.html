@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <title>政务服务网</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel='icon' href=''>
+    <link rel='stylesheet' type='text/css' href='./css/reset-css.css'>
+    <link rel='stylesheet' type='text/css' href='./css/user-center.css'>
+    <link rel='stylesheet' type='text/css' href='./css/commonCss.css'>
+
+</head>
+<body>
+    <!-- top  开始-->
+    <div id="top-div">
+        <div id="top-header" ng-controller="DemoRegisterBox">
+            <div class="header-text">
+                <span>智慧城市公共服务平台</span>
+                <img src="./images/1.png">
+            </div>
+            <div class="header-logo">
+                <img src="./images/logo.png">
+            </div>
+            <div class="header-search">
+                <form>
+                    <input type="text" name="" placeholder="请输入你想要的服务">
+                    <input type="submit" name="" value="" style="background-image: url('./images/2.png')">
+                </form>
+            </div>
+
+            <!--用户未登陆的盒子-->
+            <div class="header-login" ng-hide="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <ul>
+                    <li class="registerButton"><a href="personal-register.html" target="_blank">登录</a></li>
+                    <li class="loginButton"><a href="personal-login.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+
+            <!-- 用户已经登陆的盒子-->
+            <div class="header-login" ng-show="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <div class="user-name" ng-controller="DemoInformation">
+                    <a href="user-center.html" target="_blank" class="username-text ng-cloak">{{username}}</a>
+                </div>
+                <div class="exit-butt" ng-click="exitFun()">退出</div>
+            </div>
+
+        </div>
+        <!-- nav  开始-->
+        <div id="nav1">
+            <div id="nav1_div">
+                <div class="nav_text0">
+                    <a href="index.html"><span>首页</span></a>
+                </div>
+                <div class="nav_text1">
+                    <a href="gr-business.html" target="_blank"><span>个人办事</span></a>
+                </div>
+
+                <div class="nav_text4">
+                    <a href="convenience-serve.html" target="_blank"><span>便民服务</span></a>
+                </div>
+
+                <div class="nav_text2">
+                    <a href="user-center.html" target="_blank"><span>用户中心</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- nav  结束-->
+    </div>
+    <!-- top  结束-->
+
+    <!-- main  开始-->
+    <div id="main">
+        <div id="main-box">
+            <div class="location">
+                <span style="opacity: 0.6">当前位置：</span>
+                <span style="opacity: 0.9">用户中心</span>
+            </div>
+            <div class="gr-information" ng-controller="DemoInformation">
+                <div class="user-info">
+                    <div class="user-info-text1">账户</div>
+                    <div class="user-info-text2">
+                        <a href="userInfo-check.html#/editInfo" target="_blank">编辑与查看</a>
+                    </div>
+                </div>
+
+                <!--用户头像-->
+                <div class="gr-pic">
+                    <img class="ng-cloak" ng-src="{{imageSrc}}" src={{headImageUrl}}>
+                </div>
+
+                <div class="hello">
+                    <p>您好</p>
+                </div>
+                <ul class="list-info">
+                    <li>账户名称：<span class="username-text ng-cloak">{{username}}</span></li>
+                    <li>用户昵称：<span class="username-nick ng-cloak">{{usernick}}</span></li>
+                    <li>
+                        修改头像：<input type="file"  id="amend-favicon" file-model="myFile">
+                    </li>
+                    <li>手机号码：<span class="phone-text ng-cloak">{{phone}}</span></li>
+                    <li>实名等级：<span>未认证</span></li>
+                    <li>邮箱地址：<span class="email-text ng-cloak">{{email}}</span></li>
+                    <li>修改密码：<span>**********</span><a target="_blank" class="change-password" href="change-password.html">修改</a></li>
+                    <li>安全级别：<span>低</span></li>
+                    <!--<li class="info-time">-->
+                        <!--<p>上次登录时间 2016-02-20 09:29:58</p>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+
+            <div class="user-server">
+                <div class="gr-server-text">推荐服务</div>
+                <ul class="user-list-server">
+                    <li>
+                        <div  class="pic1"></div>
+                        <a href="#" class="hintBox" onclick="hintFun()">我的补助</a>
+                    </li>
+                    <li>
+                        <div  class="pic2"></div>
+                        <a href="#" class="hintBox" onclick="hintFun()">我的社保</a>
+                    </li>
+                    <li>
+                        <div  class="pic3"></div>
+                        <a href="#" class="hintBox" onclick="hintFun()">我的公积金</a>
+                    </li>
+                    <li>
+                        <div  class="pic4"></div>
+                        <a href="#" class="hintBox" onclick="hintFun()">房屋权属证明</a>
+                    </li>
+                    <li>
+                        <div  class="pic5"></div>
+                        <a href="#" class="hintBox" onclick="hintFun()">我的签名</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="my-server">
+                <div class="my-server-text">
+                    <p>我的办件</p>
+                    <p>我的咨询</p>
+                    <p>我的投诉</p>
+                    <p>我的纠错</p>
+                    <a href="userInfo-check.html#/myThings" target="_blank">查看更多</a>
+                </div>
+                <ul class="state" ng-controller="DemoThings">
+                    <div class="state-div">
+                        <li class="state-list1" ng-click="waitTransact()" ng-style="stateList1">待办理</li>
+                        <li class="state-list2" ng-click="transacting()" ng-style="stateList2">办理中</li>
+                        <li class="state-list3" ng-click="completeTransact()" ng-style="stateList3">已办结</li>
+                    </div>
+
+                    <ul class="show-thing">
+                        <li ng-repeat="message in things | limitTo:6">
+                            <span class='show-thing-list1 ng-cloak'>{{message.source}}</span>
+                            <span class='show-thing-list2 ng-cloak'>{{message.title}}</span>
+                            <span class='show-thing-list3 ng-cloak'>{{message.applyTime2}}</span>
+                        </li>
+
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="my-foot">
+                <div class="my-foot-text1">我的足迹</div>
+                <div class="my-foot-text2"><a href="#" class="hintBox" onclick="hintFun()">查看更多</a></div>
+                <div style=" width: 248px; height: 1px; border-bottom: 1px solid #c9c9c9;position: absolute;top:50px;"></div>
+            </div>
+
+            <div class="my-collect" ng-controller="DemoCollect">
+                <div class="my-collect-text">
+                    <p>我的收藏</p>
+                    <a target="_blank" href="userInfo-check.html#/myCollect">查看更多</a>
+                </div>
+
+                <!--最多显示五个收藏-->
+                <ul class="collect-list">
+                    <li ng-repeat="(x,collect) in collectArr | limitTo:5">
+                        <span class='collect-list1 ng-cloak'>{{collect.deptId}}</span>
+                        <a target='_blank' class='collect-list2 ng-cloak' href="business-guide.html?businessid={{collect.businessId}}">{{collect.businessName}}</a>
+                        <div class='delete-collect' ng-click="cancelCollect(x)">
+                            <img src='./images/delete.png'>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- main 结束-->
+
+    <!-- aside  悬浮框 开始-->
+    <div id="float-box">
+        <div class="float-box-up">
+            <div class="list1 capacity-answers">
+                <a href="#" class="hintBox" onclick="hintFun()">智能问答</a>
+            </div>
+
+            <!-- 移动端下载-->
+            <app-phone></app-phone>
+            <!-- 操作手册-->
+            <web-app></web-app>
+
+            <div class="list1 consult-complaint">
+                <a href="#" class="hintBox" onclick="hintFun()">咨询投诉</a>
+            </div>
+
+            <div class="list1 common-question">
+                <a href="#" class="hintBox" onclick="hintFun()">常见问题</a>
+            </div>
+            <!--<div class="list1 return-top">-->
+                <!--<a href="#1" class="hintBox">返回顶部</a>-->
+            <!--</div>-->
+            <!--<div class="list1" id="pack-up">-->
+                <!--<a href="#1">收起</a>-->
+            <!--</div>-->
+        </div>
+        <!--<div class="list1" id="unfold">-->
+            <!--<a href="#1">展开</a>-->
+        <!--</div>-->
+    </div>
+    <!-- aside  悬浮框 结束-->
+
+    <!--攻城狮正在攻克的悬浮框-->
+    <div id="bg"></div>
+    <div id="show">
+        <div class="close-img"><img class="close-img-btn" src="./images/close.png"></div>
+        <p class="hint-text">数据正在填充中, 尽请期待哟, 亲!</p>
+    </div>
+    <!-- footer  开始-->
+    <div id="footer">
+        <div id="bottom">
+            <div class="bottom-nav">
+                <a href="#" class="hintBox" onclick="hintFun()">把本站设为首页</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">关于智慧城市公共服务平台</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">本站申明</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">新手指南</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">联系我们</a>
+            </div>
+            <div class="bottom-info">
+                <span>主办：小陌研究院&nbsp;&nbsp;</span>
+                <p>中文域名：政务服务.政务 建议使用1366*768分辨率/IE9.0或以上浏览器访问达到最佳效果</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer  结束-->
+
+    <script src="./angular-1.6.2/angular.min.js"></script>
+    <script src="./angular-1.6.2/angular-sanitize.min.js"></script>
+    <script src="./angular-1.6.2/angular-route.min.js"></script>
+
+    <script src="./angular-js/app.js"></script>
+    <script src="./angular-js/controllers.js"></script>
+    <script src="./angular-js/services.js"></script>
+    <script src="./angular-js/directives.js"></script>
+    <script src="./angular-js/config.js"></script>
+    <script src="./angular-js/filters.js"></script>
+
+
+</body>
+</html>

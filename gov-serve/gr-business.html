@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <title>政务服务网</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel='icon' href=''>
+    <link rel='stylesheet' type='text/css' href='./css/reset-css.css'>
+    <link rel='stylesheet' type='text/css' href='./css/gr-business.css'>
+    <link rel='stylesheet' type='text/css' href='./css/commonCss.css'>
+</head>
+<body ng-controller="DemoGrThings">
+    <!-- top  开始-->
+    <div id="top-div">
+        <div id="top-header" ng-controller="DemoRegisterBox">
+            <div class="header-text">
+                <span>智慧城市公共服务平台</span>
+                <img src="./images/1.png">
+            </div>
+            <div class="header-logo">
+                <img src="./images/logo.png">
+            </div>
+            <div class="header-search">
+                <form>
+                    <input type="text" name="" placeholder="请输入你想要的服务">
+                    <input type="submit" name="" value="" style="background-image: url('./images/2.png')">
+                </form>
+            </div>
+
+            <!--用户未登陆的盒子-->
+            <div class="header-login" ng-hide="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <ul>
+                    <li class="registerButton"><a href="personal-register.html" target="_blank">登录</a></li>
+                    <li class="loginButton"><a href="personal-login.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+
+            <!-- 用户已经登陆的盒子-->
+            <div class="header-login" ng-show="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <div class="user-name">
+                    <a href="user-center.html" target="_blank" class="username-text ng-cloak">{{username}}</a>
+                </div>
+                <div class="exit-butt" ng-click="exitFun()">退出</div>
+            </div>
+
+        </div>
+        <!-- nav  开始-->
+        <div id="nav1">
+            <div id="nav1_div">
+                <div class="nav_text0">
+                    <a href="index.html"><span>首页</span></a>
+                </div>
+                <div class="nav_text1">
+                    <a href="gr-business.html" target="_blank"><span>个人办事</span></a>
+                </div>
+
+                <div class="nav_text4">
+                    <a href="convenience-serve.html" target="_blank"><span>便民服务</span></a>
+                </div>
+
+                <div class="nav_text2">
+                    <a href="user-center.html" target="_blank"><span>用户中心</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- nav  结束-->
+    </div>
+    <!-- top  结束-->
+
+    <!-- main  开始-->
+    <div id="main">
+        <div id="main-box">
+            <div class="location">
+                <span style="opacity: 0.6">当前位置：</span>
+                <span style="opacity: 0.9">个人办事</span>
+            </div>
+            <div class="main-left">
+                <div class="left-text1" ng-mousemove="themeFun()" ng-style="themeColor">按主题</div>
+                <div class="left-text2" ng-mousemove="branchFun()" ng-style="branchColor">按部门</div>
+                <ul class="theme-gr" ng-show="themeShow">
+                    <li class="themegr-click ng-cloak" ng-repeat="item in themeArr" ng-click="getThemeList(item)">{{item}}</li>
+                </ul>
+
+                <ul class="branch" ng-show="branchShow">
+                    <li class="branch-click ng-cloak" ng-repeat="branch in branchArr" ng-click="getBranchList(branch)">{{branch}}</li>
+                </ul>
+            </div>
+
+            <div class="main-search">
+                <form>
+                    <span>关键字：</span>
+                    <input type="text" name="" placeholder="请输入你想要的服务">
+                    <input type="submit" value="提交">
+                    <input type="radio" name="qwer" class="radio-text1" checked="checked"><span class="form-text1">办事服务类</span>
+                    <input type="radio" name="qwer" class="radio-text2"><span class="form-text2">行政监管类</span>
+                </form>
+            </div>
+
+            <div class="hot-work">
+                <div class="server-text">
+                    热点办事
+                    <input type="checkbox">
+                    <span>在线办事事项</span>
+                </div>
+                <!--动态添加办事项-->
+                <ul class="list-work">
+                    <li ng-repeat="rows in rowsArr | limitTo:5">
+                        <a target='_blank' class="ng-cloak" href="business-guide.html?businessid={{rows.id}}">{{rows.businessName}}</a>
+                        <div class='guide-ico'>
+                            <a target='_blank' href="business-guide.html?businessid={{rows.id}}">办事指南</a>
+                        </div>
+
+                        <div class='online-ico'>
+                            <a href="{{aHref}}{{rows.id}}" class='online-deal-click ng-cloak' ng-click="hintLoginFun()">在线办理</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="page-number">
+                <ul class="page-number-list">
+                    <li><a href="gr-business.html">首页</a></li>
+                    <li style="width: 65px"><a href="#" class="hintBox" onclick="hintFun()"> < 上一页</a></li>
+                    <li><a href="#" class="hintBox" onclick="hintFun()">1</a></li>
+                    <li><a href="#" class="hintBox" onclick="hintFun()">2</a></li>
+                    <li><a href="#" class="hintBox" onclick="hintFun()">3</a></li>
+                    <li style="width: 65px"><a href="#" class="hintBox" onclick="hintFun()"> > 下一页</a></li>
+                    <li><a href="#" class="hintBox" onclick="hintFun()">尾页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- main  结束-->
+
+    <!-- aside  悬浮框 开始-->
+    <div id="float-box">
+        <div class="float-box-up">
+            <div class="list1 capacity-answers">
+                <a href="#" class="hintBox" onclick="hintFun()">智能问答</a>
+            </div>
+
+            <!-- 移动端下载-->
+            <app-phone></app-phone>
+            <!-- 操作手册-->
+            <web-app></web-app>
+
+            <div class="list1 consult-complaint">
+                <a href="#" class="hintBox" onclick="hintFun()">咨询投诉</a>
+            </div>
+
+            <div class="list1 common-question">
+                <a href="#" class="hintBox" onclick="hintFun()">常见问题</a>
+            </div>
+            <!--<div class="list1 return-top">-->
+                <!--<a href="#1" class="hintBox">返回顶部</a>-->
+            <!--</div>-->
+            <!--<div class="list1" id="pack-up">-->
+                <!--<a href="#1">收起</a>-->
+            <!--</div>-->
+        </div>
+        <!--<div class="list1" id="unfold">-->
+            <!--<a href="#1">展开</a>-->
+        <!--</div>-->
+    </div>
+    <!-- aside  悬浮框 结束-->
+
+    <!--攻城狮正在攻克的悬浮框-->
+    <div id="bg"></div>
+    <div id="show">
+        <div class="close-img"><img class="close-img-btn" src="./images/close.png"></div>
+        <p class="hint-text">攻城狮正在攻克中,尽请期待哟!</p>
+    </div>
+
+    <!--提示用户登陆的盒子-->
+    <div id="bg-login" ng-style="bgLogin"></div>
+    <div id="show-login" ng-style="showLogin">
+        <div class="close-login-img" ng-click="closeLoginFun()">
+            <img ng-mouseover="mouseoverFun()" ng-mouseleave="mouseoutFun()" ng-style="bigImg" class="close-login-btn" src="./images/close.png">
+        </div>
+        <p class="close-hint-text">亲,登录之后才可以查看哟,请登录！</p>
+
+        <ul class="show-login-list">
+            <li><a href="personal-register.html" target="_blank">登&nbsp;&nbsp;&nbsp;&nbsp;录</a></li>
+            <li><a href="personal-login.html" target="_blank">注&nbsp;&nbsp;&nbsp;&nbsp;册</a></li>
+        </ul>
+    </div>
+
+    <!-- footer  开始-->
+    <div id="footer">
+        <div id="bottom">
+            <div class="bottom-nav">
+                <a href="#" class="hintBox" onclick="hintFun()">把本站设为首页</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">关于智慧城市公共服务平台</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">本站申明</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">新手指南</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">联系我们</a>
+            </div>
+            <div class="bottom-info">
+                <span>主办：小陌研究院&nbsp;&nbsp;</span>
+                <p>中文域名：政务服务.政务 建议使用1366*768分辨率/IE9.0或以上浏览器访问达到最佳效果</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer  结束-->
+
+    <script src="./angular-1.6.2/angular.min.js"></script>
+    <script src="./angular-1.6.2/angular-sanitize.min.js"></script>
+    <script src="./angular-1.6.2/angular-route.min.js"></script>
+
+    <script src="./angular-js/app.js"></script>
+    <script src="./angular-js/controllers.js"></script>
+    <script src="./angular-js/services.js"></script>
+    <script src="./angular-js/directives.js"></script>
+    <script src="./angular-js/config.js"></script>
+    <script src="./angular-js/filters.js"></script>
+</body>
+</html>

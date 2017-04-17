@@ -1,0 +1,40 @@
+<div class="main-amend" id="edit-user-info" ng-controller="DemoeditInfo">
+    <div class="main-amend-text">账户信息</div>
+
+    <ul id="edit-info">
+        <form class="edit-info-form">
+            <li>
+                <span>昵称</span>
+                <input class="edit-info1 edit-info-name" ng-model="usernick" type="text" name="" placeholder="请输入您的姓名">
+            </li>
+            <li>
+                <span>手机号</span>
+                <input class="edit-info1 edit-info-phone" ng-model="phone" type="number" name="" placeholder="请输入您的手机号">
+            </li>
+            <li>
+                <span>固定电话</span>
+                <input class="edit-info1 edit-info-tel" ng-model="tel" type="number" name="" placeholder="请输入您的固定电话">
+            </li>
+            <li>
+                <span>邮箱</span>
+                <input class="edit-info1 edit-info-email" ng-model="email" type="email" name="" placeholder="请输入您的邮箱">
+            </li>
+            <li>
+                <span>身份证号</span>
+                <input class="edit-info1 edit-info-idcard" ng-model="idcard" type="number" name="" placeholder="请输入您的身份证号">
+            </li>
+            <li>
+            <span>性别</span>
+                <input class="edit-info-boy" ng-model="sexState" type="radio" name="sex" value="男"><span class="boy">男</span>
+                <input class="edit-info-girl" ng-model="sexState" type="radio" name="sex" value="女"><span class="girl">女</span>
+            </li>
+            <li>
+                <span>签名</span>
+                <input class="edit-info1 edit-info-signature" ng-model="signature" type="text" name="" placeholder="请输入您的签名">
+            </li>
+            <li>
+                <input class="edit-info1 edit-butt" ng-click="editInfofun()" type="button" name="" value="提交">
+            </li>
+        </form>
+    </ul>
+</div>

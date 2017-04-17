@@ -1,0 +1,95 @@
+body{
+    background:#eeeeee;
+}
+.ng-cloak{
+    display:none !important;
+}
+/*top  开始*/
+header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+#top{
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+}
+.logo-img{
+    margin-top: 9px;
+}
+.phone-box{
+    float: right;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    margin-top: 5px;
+}
+.phone-box img{
+    position: absolute;
+}
+.phone-box span{
+    font-size: 16px;
+    color: #0e90d2;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+/*top  结束*/
+
+/*footer 开始*/
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #e7e7e7;
+}
+#bottom{
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+.bottom-nav{
+    position: absolute;
+    top: 60px;
+    width: 1000px;
+    height: 25px;
+    text-align: center;
+}
+.bottom-nav a{
+    margin-right: 20px;
+    font-size: 18px;
+    color: black;
+    opacity: 0.8;
+}
+.bottom-nav a:hover{
+    color: #0099e2;
+}
+.bottom-nav span{
+    padding-right: 15px;
+}
+.bottom-nav i{
+    margin-right: 20px;
+}
+.bottom-info{
+    width: 1000px;
+    height: 62px;
+    position: absolute;
+    top: 110px;
+    text-align: center;
+    padding-top: 5px;
+}
+.bottom-info span{
+    font-size: 16px;
+    opacity: 0.6;
+}
+.bottom-info p{
+    font-size: 16px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+.bottom-info img{
+    position: absolute;
+    top: 3px;
+}
+/*footer 结束*/

@@ -1,0 +1,345 @@
+body{
+    /*background-color: #eeeeee;*/
+}
+a:hover{
+    text-decoration: none;
+}
+input{
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+/*main 开始*/
+#main{
+    width: 100%;
+    height: 750px;
+    background-color: #eeeeee;
+}
+#empty{
+    width: 100%;
+    height: 25px;
+}
+#main-box{
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+.login{
+    width: 730px;
+    height: 45px;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+.login1{
+    width: 200px;
+    height: 40px;
+    background-color: #0099e2;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-right: 43px;
+}
+.trilateral1{
+    position: absolute;
+    right: -40px;
+    top: 0;
+    border-width: 20px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #0099e2;
+}
+
+.login2{
+    width: 200px;
+    height: 40px;
+    background-color: #d5d5d5;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-right: 43px;
+}
+.triangle-cave1,.triangle-cave2{
+    position: absolute;
+    left: -40px;
+    border-width: 20px;
+    border-style: solid solid solid dashed;
+    border-color: #d5d5d5 #d5d5d5 #d5d5d5 transparent;
+}
+.trilateral2{
+    position: absolute;
+    right: -40px;
+    top: 0;
+    border-width: 20px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #d5d5d5;
+}
+.login3{
+    width: 200px;
+    height: 40px;
+    background-color: #d5d5d5;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-right: 40px;
+}
+.trilateral3{
+    position: absolute;
+    right: -40px;
+    top: 0;
+    border-width: 20px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #d5d5d5;
+}
+ul li span{
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    font-weight: 600;
+}
+.cut-off-rule{
+    width: 960px;
+    height: 1px;
+    left: 20px;
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    top: 100px;
+}
+.menu{
+    width: 535px;
+    height: 600px;
+    position: absolute;
+    top: 130px;
+    left: 260px;
+}
+.menu-list1{
+    margin-left: 35px;
+    width: 600px;
+    height: 70px;
+}
+.menu-list1 p{
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.menu-list1 input[type^='tex']{
+    width: 400px;
+    height: 38px;
+    outline: none;
+    border: 2px solid #e7e7e7;
+    margin-top: 8px;
+    font-size: 18px;
+}
+.control-show-text1{
+    font-size: 14px;
+    color: black;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+.menu-list2{
+    margin-left: 35px;
+    width: 600px;
+    height: 70px;
+    margin-top: 20px;
+}
+.menu-list2 p{
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.menu-list2 input[type^='tex']{
+    width: 400px;
+    height: 38px;
+    outline: none;
+    border: 2px solid #e7e7e7;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.menu-list3{
+    margin-left: 35px;
+    width: 600px;
+    height: 70px;
+    margin-top: 20px;
+}
+.menu-list3 p{
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.menu-list3 input[type^='tex']{
+    width: 400px;
+    height: 38px;
+    outline: none;
+    border: 2px solid #e7e7e7;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.menu-list4{
+    margin-left: 35px;
+    width: 600px;
+    height: 140px;
+    margin-top: 20px;
+}
+.menu-list4 p{
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.menu-list4 input[type^='pass']{
+    width: 400px;
+    height: 38px;
+    outline: none;
+    border: 2px solid #e7e7e7;
+    margin-top: 8px;
+    font-size: 18px;
+}
+.menu-list5{
+    position: relative;
+    margin-left: 35px;
+    width: 400px;
+    height: 50px;
+}
+.menu-list5 input[type^='check']{
+    position: absolute;
+    top: 3px;
+}
+.menu-list5 p{
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.butt{
+    margin-left: 35px;
+    width: 400px;
+    height: 50px;
+    margin-top: 5px;
+    text-align: center;
+}
+.butt input[type^='butt']{
+    width: 400px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    background-color: #0099e2;
+    font-weight: 700;
+}
+/*main 结束*/
+/*攻城狮正在攻克的悬浮框*/
+#bg{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    /*IE下使用*/
+    filter: alpha(opacity=70);
+}
+#show{
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    width: 560px;
+    height: 260px;
+    padding: 8px;
+    border: 8px solid #E8E9F7;
+    background-color: white;
+    z-index:1002;
+}
+.close-img{
+    width: 50px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+}
+.hint-text{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    top: 120px;
+    left: 140px;
+}
+
+/*注册成功的登陆框*/
+.login-success{
+    width: 535px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 240px;
+}
+.login-success p{
+    font-size: 26px;
+    opacity: 0.8;
+    font-weight: 700;
+    text-align: center;
+}
+.login-success div{
+    font-size: 30px;
+    opacity: 0.8;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+/*footer 开始*/
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #e7e7e7;
+}
+#bottom{
+    width: 1000px;
+    height: 235px;
+    margin: 0 auto;
+    position: relative;
+}
+.bottom-nav{
+    position: absolute;
+    top: 60px;
+    width: 1000px;
+    height: 25px;
+    text-align: center;
+}
+.bottom-nav a{
+    margin-right: 20px;
+    font-size: 18px;
+}
+.bottom-nav i{
+    margin-right: 20px;
+}
+.bottom-info{
+    width: 1000px;
+    height: 62px;
+    position: absolute;
+    top: 130px;
+    text-align: center;
+    padding-top: 5px;
+}
+.bottom-info span{
+    font-size: 16px;
+    opacity: 0.6;
+}
+.bottom-info p{
+    font-size: 16px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+.bottom-info img{
+    position: absolute;
+    top: 3px;
+}
+
+/*footer 结束*/

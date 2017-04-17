@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title>政务服务网</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel='icon' href=''>
+    <link rel='stylesheet' type='text/css' href='./css/reset-css.css'>
+    <link rel='stylesheet' type='text/css' href='./css/convenience-serve.css'>
+    <link rel='stylesheet' type='text/css' href='./css/commonCss.css'>
+</head>
+<body>
+    <!-- top  开始-->
+    <div id="top-div">
+        <div id="top-header" ng-controller="DemoRegisterBox">
+            <div class="header-text">
+                <span>智慧城市公共服务平台</span>
+                <img src="./images/1.png">
+            </div>
+            <div class="header-logo">
+                <img src="./images/logo.png">
+            </div>
+            <div class="header-search">
+                <form>
+                    <input type="text" name="" placeholder="请输入你想要的服务">
+                    <input type="submit" name="" value="" style="background-image: url('./images/2.png')">
+                </form>
+            </div>
+
+
+
+            <!--用户未登陆的盒子-->
+            <div class="header-login" ng-hide="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <ul>
+                    <li class="registerButton"><a href="personal-register.html" target="_blank">登录</a></li>
+                    <li class="loginButton"><a href="personal-login.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+
+            <!-- 用户已经登陆的盒子-->
+            <div class="header-login" ng-show="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <div class="user-name">
+                    <a href="user-center.html" target="_blank" class="username-text ng-cloak">{{username}}</a>
+                </div>
+                <div class="exit-butt" ng-click="exitFun()">退出</div>
+            </div>
+
+        </div>
+        <!-- nav  开始-->
+        <div id="nav1">
+            <div id="nav1_div">
+                <div class="nav_text0">
+                    <a href="index.html"><span>首页</span></a>
+                </div>
+                <div class="nav_text1">
+                    <a href="gr-business.html" target="_blank"><span>个人办事</span></a>
+                </div>
+
+                <div class="nav_text4">
+                    <a href="convenience-serve.html" target="_blank"><span>便民服务</span></a>
+                </div>
+
+                <div class="nav_text2">
+                    <a href="user-center.html" target="_blank"><span>用户中心</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- nav  结束-->
+    </div>
+    <!-- top  结束-->
+
+    <!-- main  开始-->
+    <div id="main">
+        <div id="main-big">
+            <div id="main-top">
+                <span style="opacity: 0.6">当前位置：</span>
+                <span>首页 > 便民服务</span>
+            </div>
+
+            <div id="all-classify">
+                <div class="classify-title">所有分类</div>
+                <ul class="classify-list">
+                    <li name="">热门服务</li>
+                    <li name="">婚育收养</li>
+                    <li name="">教育培训</li>
+                    <li name="">求职执业</li>
+                    <li name="">纳税缴费</li>
+                    <li name="">就医保健</li>
+                    <li name="">社会保险</li>
+                    <li name="">福利救助</li>
+                    <li name="">房屋租售</li>
+                    <li name="">交通旅游</li>
+                    <!--<li name="">证件办理</li>-->
+                    <!--<li name="">场馆设施</li>-->
+                    <!--<li name="">公共安全</li>-->
+                    <!--<li name="">司法公证</li>-->
+                    <!--<li name="">环境气象</li>-->
+                    <!--<li name="">三农服务</li>-->
+                </ul>
+            </div>
+
+            <div id="hot-server">
+                <div class="hot-server-title">
+                    热点服务
+                </div>
+
+                <ul class="hot-server-list">
+                    <li>
+                        <a href="./server-search-html/phone-search.html" target="_blank"><img src="./images/80.png"></a>
+                        <div class="list-text"><a href="./server-search-html/phone-search.html" target="_blank">手机号归属地查询</a></div>
+                    </li>
+                    <li>
+                        <a href="./server-search-html/idcard-search.html" target="_blank"><img src="./images/81.png"></a>
+                        <div class="list-text"><a href="./server-search-html/idcard-search.html" target="_blank">身份证信息查询</a></div>
+                    </li>
+                    <li>
+                        <a href="./server-search-html/ip-search.html" target="_blank"><img src="./images/82.png"></a>
+                        <div class="list-text"><a href="./server-search-html/ip-search.html" target="_blank">ip地址信息查询</a></div>
+                    </li>
+                    <li>
+                        <a href="./server-search-html/history-search.html" target="_blank"><img src="./images/84.png"></a>
+                        <div class="list-text"><a href="./server-search-html/history-search.html" target="_blank">历史上的今天</a></div>
+                    </li>
+                    <li style="border-bottom: 1px solid #e7e7e7;border-right: 0px solid #e7e7e7">
+                        <a href="./server-search-html/bus-search.html" target="_blank"><img src="./images/87.png"></a>
+                        <div class="list-text"><a href="./server-search-html/bus-search.html" target="_blank">长途汽车站查询</a></div>
+                    </li>
+                    <li style="border-right: 1px solid #e7e7e7;border-bottom: 0 solid #e7e7e7;">
+                        <img src="./images/85.png">
+                        <div class="list-text"><a href="#" class="hintBox" onclick="hintFun()">万年历信息查询</a></div>
+                    </li>
+                    <li style="border-bottom: 0 solid #e7e7e7">
+                        <img src="./images/86.png">
+                        <div class="list-text"><a href="#" class="hintBox" onclick="hintFun()">汇率信息查询</a></div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- main  结束-->
+
+    <!--攻城狮正在攻克的悬浮框-->
+    <div id="bg"></div>
+    <div id="show">
+        <div class="close-img"><img class="close-img-btn" src="./images/close.png"></div>
+        <p class="hint-text">数据正在填充中, 尽请期待哟, 亲!</p>
+    </div>
+
+    <!-- aside  悬浮框 开始-->
+    <div id="float-box">
+        <div class="float-box-up">
+            <div class="list1 capacity-answers">
+                <a href="#" class="hintBox" onclick="hintFun()">智能问答</a>
+            </div>
+
+            <!-- 移动端下载-->
+            <app-phone></app-phone>
+            <!-- 操作手册-->
+            <web-app></web-app>
+
+            <div class="list1 consult-complaint">
+                <a href="#" class="hintBox" onclick="hintFun()">咨询投诉</a>
+            </div>
+
+            <div class="list1 common-question">
+                <a href="#" class="hintBox" onclick="hintFun()">常见问题</a>
+            </div>
+            <!--<div class="list1 return-top">-->
+                <!--<a href="#1" class="hintBox">返回顶部</a>-->
+            <!--</div>-->
+            <!--<div class="list1" id="pack-up">-->
+                <!--<a href="#1">收起</a>-->
+            <!--</div>-->
+        </div>
+        <!--<div class="list1" id="unfold">-->
+            <!--<a href="#1">展开</a>-->
+        <!--</div>-->
+    </div>
+    <!-- aside  悬浮框 结束-->
+
+
+
+    <!-- footer  开始-->
+    <div id="footer">
+        <div id="bottom">
+            <div class="bottom-nav">
+                <a href="#" class="hintBox" onclick="hintFun()">把本站设为首页</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">关于智慧城市公共服务平台</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">本站申明</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">新手指南</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">联系我们</a>
+            </div>
+            <div class="bottom-info">
+                <span>主办：小陌研究院&nbsp;&nbsp;</span>
+                <p>中文域名：政务服务.政务 建议使用1366*768分辨率/IE9.0或以上浏览器访问达到最佳效果</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer  结束-->
+
+    <script src="./angular-1.6.2/angular.min.js"></script>
+    <script src="./angular-1.6.2/angular-sanitize.min.js"></script>
+    <script src="./angular-1.6.2/angular-route.min.js"></script>
+
+    <script src="./angular-js/app.js"></script>
+    <script src="./angular-js/controllers.js"></script>
+    <script src="./angular-js/services.js"></script>
+    <script src="./angular-js/directives.js"></script>
+    <script src="./angular-js/config.js"></script>
+    <script src="./angular-js/filters.js"></script>
+
+</body>
+</html>

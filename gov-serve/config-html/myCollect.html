@@ -1,0 +1,17 @@
+<!--我的收藏-->
+<div id="user-collect" ng-controller="DemoCollect">
+    <div class="user-collect-text">我的收藏</div>
+    <ul class="collect-list">
+        <li ng-repeat="(x,collect) in collectArr | limitTo:11">
+            <span class='collect-list1 ng-cloak'>{{collect.deptId}}</span>
+            <a target='_blank' class='collect-list2 ng-cloak' href="business-guide.html?businessid={{collect.businessId}}">{{collect.businessName}}</a>
+            <div class='delete-collect' ng-click="cancelCollect(x)">
+            <img src='./images/delete.png'>
+            </div>
+        </li>
+    </ul>
+    <!--<ul class="collect-page-number">-->
+    <!--<li class="collect-page-number1">上一页</li>-->
+    <!--<li class="collect-page-number2">下一页</li>-->
+    <!--</ul>-->
+</div>

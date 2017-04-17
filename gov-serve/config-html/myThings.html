@@ -1,0 +1,17 @@
+<!--我的办件-->
+<div id="my-things" ng-controller="DemoThings">
+    <div class="my-things-text">我的办件</div>
+    <div class="state-div">
+        <div class="state-list1" ng-click="waitTransact()" ng-style="stateList1">待办理</div>
+        <div class="state-list2" ng-click="transacting()" ng-style="stateList2">办理中</div>
+        <div class="state-list3" ng-click="completeTransact()" ng-style="stateList3">已办结</div>
+    </div>
+
+    <ul class="my-things-list">
+        <li ng-repeat="message in things | limitTo:11">
+            <span class='show-thing-list1 ng-cloak'>{{message.source}}</span>
+            <span class='show-thing-list2 ng-cloak'>{{message.title}}</span>
+            <span class='show-thing-list3 ng-cloak'>{{message.applyTime2}}</span>
+        </li>
+    </ul>
+</div>

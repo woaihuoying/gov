@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <title>政务服务网</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel='icon' href=''>
+    <link rel='stylesheet' type='text/css' href='./css/reset-css.css'>
+    <link rel='stylesheet' type='text/css' href='./css/online-declare.css'>
+    <link rel='stylesheet' type='text/css' href='./css/commonCss.css'>
+
+</head>
+<body>
+    <!-- top  开始-->
+    <div id="top-div">
+        <div id="top-header" ng-controller="DemoRegisterBox">
+            <div class="header-text">
+                <span>智慧城市公共服务平台</span>
+                <img src="./images/1.png">
+            </div>
+            <div class="header-logo">
+                <img src="./images/logo.png">
+            </div>
+            <div class="header-search">
+                <form>
+                    <input type="text" name="" placeholder="请输入你想要的服务">
+                    <input type="submit" name="" value="">
+                </form>
+            </div>
+
+            <!--用户未登陆的盒子-->
+            <div class="header-login" ng-hide="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <ul>
+                    <li class="registerButton"><a href="personal-register.html" target="_blank">登录</a></li>
+                    <li class="loginButton"><a href="personal-login.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+
+            <!-- 用户已经登陆的盒子-->
+            <div class="header-login" ng-show="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <div class="user-name">
+                    <a href="user-center.html" target="_blank" class="username-text ng-cloak">{{username}}</a>
+                </div>
+                <div class="exit-butt" ng-click="exitFun()">退出</div>
+            </div>
+
+        </div>
+        <!-- nav  开始-->
+        <div id="nav1">
+            <div id="nav1_div">
+                <div class="nav_text0">
+                    <a href="index.html"><span>首页</span></a>
+                </div>
+                <div class="nav_text1">
+                    <a href="gr-business.html" target="_blank"><span>个人办事</span></a>
+                </div>
+
+                <div class="nav_text4">
+                    <a href="convenience-serve.html" target="_blank"><span>便民服务</span></a>
+                </div>
+
+                <div class="nav_text2">
+                    <a href="user-center.html" target="_blank"><span>用户中心</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- nav  结束-->
+
+    </div>
+    <!-- top  结束-->
+
+
+    <!-- main  开始-->
+    <div id="main">
+        <div id="main-box">
+            <div class="location">
+                <span style="opacity: 0.6">当前位置：</span>
+                <span style="opacity: 0.9">在线申报</span>
+            </div>
+
+            <!--用户填写在线申报的内容-->
+            <div id="main-box-div" ng-controller="DemoOnlineTransaction">
+                <div class="main-div-text ng-cloak">{{businessName}}</div>
+                <form class="main-form">
+                    <ul>
+                        <li>
+                            <span>*申报人</span>
+                            <input id="declare-name" type="text" ng-model="declarantName" name="" placeholder="请输入姓名">
+                        </li>
+                        <li>
+                            <span>*身份证号码</span>
+                            <input id="declare-idcard" type="number" ng-model="declarantIdCard" name="" placeholder="请输入身份证号码">
+                        </li>
+                        <li>
+                            <span>*手机号</span>
+                            <input id="declare-phone" type="number" ng-model="declarantPhone" name="" placeholder="请输入手机号">
+                        </li>
+                        <li>
+                            <span>*联系人姓名</span>
+                            <input id="contacts-name" type="text" ng-model="contactsName" name="" placeholder="请输入联系人姓名">
+                        </li>
+                        <li>
+                            <span>联系人身份证号码</span>
+                            <input id="contacts-idcard" type="number" ng-model="contactsIdCard" name="" placeholder="请输入联系人身份证号码">
+                        </li>
+                        <li>
+                            <span>联系人电话</span>
+                            <input id="contacts-tel" type="number" ng-model="contactsTel" name="" placeholder="请输入联系人电话">
+                        </li>
+                        <li>
+                            <span>联系地址</span>
+                            <input id="contact-address" type="text" ng-model="contactAddress" name="" placeholder="请输入联系地址">
+                        </li>
+                        <li>
+                            <span>备注</span>
+                            <span class="remark-text">无</span>
+                        </li>
+                        <li>
+                            <input id="butt" type="button" ng-click="declarantInfo()" name="" value="提交">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- main  结束-->
+
+
+
+    <!--攻城狮正在攻克的悬浮框-->
+    <div id="bg"></div>
+    <div id="show">
+        <div class="close-img"><img class="close-img-btn" src="./images/close.png"></div>
+        <p class="hint-text">数据正在填充中, 尽请期待哟, 亲!</p>
+    </div>
+
+    <!-- footer  开始-->
+    <div id="footer">
+        <div id="bottom">
+            <div class="bottom-nav">
+                <a href="#" class="hintBox" onclick="hintFun()">把本站设为首页</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">关于智慧城市公共服务平台</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">本站申明</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">新手指南</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">联系我们</a>
+            </div>
+            <div class="bottom-info">
+                <span>主办：小陌研究院&nbsp;&nbsp;</span>
+                <p>中文域名：政务服务.政务 建议使用1366*768分辨率/IE9.0或以上浏览器访问达到最佳效果</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer  结束-->
+
+    <script src="./angular-1.6.2/angular.min.js"></script>
+    <script src="./angular-1.6.2/angular-sanitize.min.js"></script>
+    <script src="./angular-1.6.2/angular-route.min.js"></script>
+
+    <script src="./angular-js/app.js"></script>
+    <script src="./angular-js/controllers.js"></script>
+    <script src="./angular-js/services.js"></script>
+    <script src="./angular-js/directives.js"></script>
+    <script src="./angular-js/config.js"></script>
+    <script src="./angular-js/filters.js"></script>
+
+</body>
+</html>

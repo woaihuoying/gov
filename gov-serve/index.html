@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <title>政务服务网</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="小陌">
+
+    <link rel='icon' href=''>
+    <link rel='stylesheet' type='text/css' href='./css/reset-css.css'>
+    <link rel='stylesheet' type='text/css' href='./css/index.css'>
+    <link rel='stylesheet' type='text/css' href='./css/commonCss.css'>
+    
+</head>
+<body>
+    <!-- top  开始-->
+    <div id="top-div">
+        <div id="top-header" ng-controller="DemoRegisterBox">
+            <div class="header-text">
+                <span>智慧城市公共服务平台</span>
+                <img src="./images/1.png">
+            </div>
+            <div class="header-logo">
+                <img src="./images/logo.png">
+            </div>
+            <div class="header-search">
+                <form>
+                    <input type="text" name="" placeholder="请输入你想要的服务">
+                    <input type="submit" name="" value="">
+                </form>
+            </div>
+
+            <!--用户未登陆的盒子-->
+            <div class="header-login" ng-hide="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <ul>
+                    <li class="registerButton"><a href="personal-register.html" target="_blank">登录</a></li>
+                    <li class="loginButton"><a href="personal-login.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+
+            <!-- 用户已经登陆的盒子-->
+            <div class="header-login" ng-show="ifValue">
+                <div class="header-login-text">
+                    <img src="./images/login_img.png">
+                    <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+                </div>
+                <div class="user-name">
+                    <a href="user-center.html" target="_blank" class="username-text ng-cloak">{{username}}</a>
+                </div>
+                <div class="exit-butt" ng-click="exitFun()">退出</div>
+            </div>
+        </div>
+    </div>
+    <!-- top  结束-->
+
+    <!-- 中间部分大图-->
+    <div id="big-pic">
+        <div class="bgImg">
+            <ul class="navList">
+                <a class="navTitle" href="gr-business.html" target="_blank">
+                    <li class="navList0" style="background-color: #1492ff">
+                        <img class="imgRotate" src="./images/gr_business.png">
+                        <p>个人办事</p>
+                    </li>
+                </a>
+                <a class="navTitle" href="convenience-serve.html" target="_blank">
+                    <li class="navList0">
+                        <img src="./images/con_serve.png">
+                        <p>便民服务</p>
+                    </li>
+                </a>
+                <a class="navTitle" href="user-center.html" target="_blank" class="hintBox" onclick="hintFun()">
+                    <li class="navList0">
+                        <img src="./images/shenpi.png">
+                        <p>用户中心</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- 大图上的动图文字-->
+        <embed class="dynamic-text" src="./images/1.swf" quality="high" wmode="transparent" bgcolor="#ffffff" name="mymovie" align="center" type="application/x-shockwave-flash"></embed>
+
+    </div>
+
+    <!-- main  开始-->
+    <div id="main">
+        <div id="main-box">
+            <!-- 热门服务-->
+            <div class="hot-server">
+                <div class="server-text">热门服务</div>
+                <ul class="hotServiceList">
+                    <a href="./server-search-html/phone-search.html">
+                        <li class="hotServiceList0">
+                            <img src="./images/phone_address.png">
+                            <div class="serviceSearch">手机号归属地</div>
+                        </li>
+                    </a>
+                    <a href="./server-search-html/idcard-search.html">
+                        <li class="hotServiceList0">
+                            <img src="./images/idCard.png">
+                            <div class="serviceSearch">身份证信息</div>
+                        </li>
+                    </a>
+                    <a href="./server-search-html/ip-search.html" target="_blank">
+                        <li class="hotServiceList0">
+                            <img src="./images/info_search.png">
+                            <div class="serviceSearch">i p 地址信息</div>
+                        </li>
+                    </a>
+                    <a href="./server-search-html/history-search.html" target="_blank">
+                        <li class="hotServiceList0">
+                            <img src="./images/history_today.png">
+                            <div class="serviceSearch">历史上的今天</div>
+                        </li>
+                    </a>
+                    <a href="./server-search-html/bus-search.html" target="_blank">
+                        <li class="hotServiceList0">
+                            <img src="./images/bus.png">
+                            <div class="serviceSearch">长途汽车站</div>
+                        </li>
+                    </a>
+                    <a class="hintBox" onclick="hintFun()">
+                        <li class="hotServiceList0">
+                            <img src="./images/pay_taxes.png">
+                            <div class="serviceSearch">个人纳税证明</div>
+                        </li>
+                    </a>
+                    <a class="hintBox" onclick="hintFun()">
+                        <li class="hotServiceList0">
+                            <img src="./images/marriage.png">
+                            <div class="serviceSearch">婚姻登记预约</div>
+                        </li>
+                    </a>
+                    <a class="hintBox" onclick="hintFun()">
+                        <li class="hotServiceList0">
+                            <img src="./images/home.png">
+                            <div class="serviceSearch">房屋权属证明</div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+
+            <div class="news-info">
+                <div class="news-hot">热点资讯</div>
+                <ul class="news-list" ng-controller="DemoNews">
+                    <li class="newsList0" ng-repeat="news in newsArr">
+                        <a class="newsTextColor" href="news-details.html?newsid={{news.mongoId}}" target="_blank" class="ng-cloak">{{news.title}}</a>
+                        <p class="ng-cloak newsTime">{{news.showDate}}</p>
+                    </li>
+                    <li class='more'>
+                        <a class="moreNews" href="news-list.html?pageNumber=1" target="_blank">更多 >></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- main  结束-->
+
+    <!-- aside  悬浮框 开始-->
+    <div id="float-box">
+        <div class="float-box-up">
+            <div class="list1 capacity-answers">
+                <a href="#" class="hintBox" onclick="hintFun()">智能问答</a>
+            </div>
+
+            <!-- 移动端下载-->
+            <app-phone></app-phone>
+            <!-- 操作手册-->
+            <web-app></web-app>
+
+            <div class="list1 consult-complaint">
+                <a href="#" class="hintBox" onclick="hintFun()">咨询投诉</a>
+            </div>
+
+            <div class="list1 common-question">
+                <a href="#" class="hintBox" onclick="hintFun()">常见问题</a>
+            </div>
+            <!--<div class="list1 return-top">-->
+                <!--<a href="#1" class="hintBox">返回顶部</a>-->
+            <!--</div>-->
+            <!--<div class="list1" id="pack-up">-->
+                <!--<a href="#1">收起</a>-->
+            <!--</div>-->
+        </div>
+        <!--<div class="list1" id="unfold">-->
+            <!--<a href="#1">展开</a>-->
+        <!--</div>-->
+    </div>
+    <!-- aside  悬浮框 结束-->
+
+    <!--攻城狮正在攻克的悬浮框-->
+    <div id="bg"></div>
+    <div id="show">
+        <div class="close-img"><img class="close-img-btn" src="./images/close.png"></div>
+        <p class="hint-text">数据正在填充中, 尽请期待哟, 亲!</p>
+    </div>
+
+    <!-- footer  开始-->
+    <div id="footer">
+        <div id="bottom">
+            <div class="bottom-nav">
+                <a href="#" class="hintBox" onclick="hintFun()">把本站设为首页</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">关于智慧城市公共服务平台</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">本站申明</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">新手指南</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">联系我们</a>
+            </div>
+            <div class="bottom-info">
+                <span>主办：小陌研究院&nbsp;&nbsp;</span>
+                <p>中文域名：政务服务.政务 建议使用1366*768分辨率/IE9.0或以上浏览器访问达到最佳效果</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer  结束-->
+
+    <script src="./angular-1.6.2/angular.min.js"></script>
+    <script src="./angular-1.6.2/angular-sanitize.min.js"></script>
+    <script src="./angular-1.6.2/angular-route.min.js"></script>
+
+    <!--<script src="./angular-1.2.32/angular.js"></script>-->
+    <!--<script src="./angular-1.2.32/angular-sanitize.js"></script>-->
+    <!--<script src="./angular-1.2.32/angular-route.js"></script>-->
+    <!--<script src="./angular-1.2.32/json2.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/r29/html5.js"></script>-->
+
+    <!-- ie7 -->
+    <!--<script src="http://www.javascript100.com/path/to/json2.js"></script>-->
+
+
+    <script src="./angular-js/app.js"></script>
+    <script src="./angular-js/controllers.js"></script>
+    <script src="./angular-js/services.js"></script>
+    <script src="./angular-js/directives.js"></script>
+    <script src="./angular-js/config.js"></script>
+    <script src="./angular-js/filters.js"></script>
+</body>
+</html>

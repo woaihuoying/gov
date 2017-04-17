@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <title>政务服务网</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel='icon' href=''>
+    <link rel='stylesheet' type='text/css' href='./css/reset-css.css'>
+    <link rel='stylesheet' type='text/css' href='./css/personal-register.css'>
+    <link rel='stylesheet' type='text/css' href='./css/commonCss.css'>
+
+</head>
+<body>
+    <!-- top  开始-->
+    <div id="top-div">
+        <div id="top-header">
+            <div class="header-text">
+                <span>智慧城市公共服务平台</span>
+                <img src="./images/1.png">
+            </div>
+            <div class="header-logo">
+                <img src="./images/logo.png">
+            </div>
+            <div class="header-search">
+                <form>
+                    <input type="text" name="" placeholder="请输入你想要的服务">
+                    <input type="submit" name="" value="" style="background-image: url('./images/2.png')">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- top  结束-->
+
+    <!-- main  开始-->
+    <div id="main-img">
+        <div id="main-login">
+            <div class="gr">
+                <a href=""><span>个人登录</span></a>
+            </div>
+            <!--<div  class="fr">-->
+                <!--<a href="#" class="hintBox" onclick="hintFun()"><span>法人登录</span></a>-->
+            <!--</div>-->
+            <!--<div  class="zf">-->
+                <!--<a href="#" class="hintBox" onclick="hintFun()"><span>政府登录</span></a>-->
+            <!--</div>-->
+            <div class="main-search">
+                <form class="form-submit" ng-controller="DemoRegister">
+                    <input id="username" ng-model="username" type="text" name="" placeholder="请输入用户名">
+                    <input id="password" ng-model="password" type="password" name="" placeholder="请输入密码">
+                    <input type="checkbox">
+                    <span style="font-size: 12px;opacity: 0.6">十天之内免登录</span>
+                    <a href="#" class="hintBox" onclick="hintFun()">忘记密码?</a>
+                    <input type="button" name="" ng-click="funRegister()" value="登录" id="butt">
+                </form>
+            </div>
+            <div class="alipay">
+                <a href="#" class="hintBox" onclick="hintFun()"><span style="font-size: 12px;">支付宝登录</span></a>
+            </div>
+            <div class="login-bottom">
+                <span><a href="personal-login.html" style="color: white;">立即注册账号</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- main  结束-->
+
+    <!--攻城狮正在攻克的悬浮框-->
+    <div id="bg"></div>
+    <div id="show">
+        <div class="close-img"><img class="close-img-btn" src="./images/close.png"></div>
+        <p class="hint-text">数据正在填充中, 尽请期待哟, 亲!</p>
+    </div>
+
+    <!-- footer  开始-->
+    <div id="footer">
+        <div id="bottom">
+            <div class="bottom-nav">
+                <a href="#" class="hintBox" onclick="hintFun()">把本站设为首页</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">关于智慧城市公共服务平台</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">本站申明</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">新手指南</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">联系我们</a>
+            </div>
+            <div class="bottom-info">
+                <span>主办：小陌研究院&nbsp;&nbsp;</span>
+                <p>中文域名：政务服务.政务 建议使用1366*768分辨率/IE9.0或以上浏览器访问达到最佳效果</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer  结束-->
+
+    <script src="./angular-1.6.2/angular.min.js"></script>
+    <script src="./angular-1.6.2/angular-sanitize.min.js"></script>
+    <script src="./angular-1.6.2/angular-route.min.js"></script>
+
+    <script src="./angular-js/app.js"></script>
+    <script src="./angular-js/controllers.js"></script>
+    <script src="./angular-js/services.js"></script>
+    <script src="./angular-js/directives.js"></script>
+    <script src="./angular-js/config.js"></script>
+    <script src="./angular-js/filters.js"></script>
+
+</body>
+</html>

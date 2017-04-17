@@ -1,0 +1,179 @@
+body{
+	/*background:#f3f3f3;*/
+}
+a:hover{
+	text-decoration: none;
+}
+
+
+/*main 开始*/
+#main-img{
+	width: 100%;
+	height: 613px;
+	background-image: url('../images/login.png');
+}
+#main-login{
+	width: 360px;
+	height: 327px;
+	background-color: #f0f7fd;
+	float: right;
+	margin-top: 100px;
+	margin-right: 150px;
+	position: relative;
+}
+#main-login span{
+	font-size: 16px;
+}
+.gr,.fr,.zf{
+	width: 120px;
+	height: 40px;
+	background-color: #f0f7fd;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+}
+.gr a{
+	color: black;
+}
+.fr a{
+	color: black;
+}
+.zf a{
+	color: black;
+}
+.fr,.zf{
+	background-color: #dddddd;
+}
+a{
+	text-decoration: none;
+}
+
+.main-search{
+	width: 360px;
+	height: 230px;
+	float: left;
+	margin-top: 20px;
+}
+.main-search form{
+	margin-top: 20px;
+	margin: 0 auto;
+	width: 270px;
+	height: 230px;
+	position: relative;
+}
+.main-search form input[type^='te']{
+	width: 270px;
+	height: 37px;
+	border: 1px solid powderblue;
+	font-size: 15px;
+	outline: none;
+	border: 1px solid #e7e7e7;
+}
+.main-search form input[type^='pass']{
+	width: 270px;
+	height: 37px;
+	margin-top: 20px;
+	border: 1px solid powderblue;
+	font-size: 15px;
+	outline: none;
+	border: 1px solid #e7e7e7;
+}
+.main-search form input[type^='chec']{
+	position: absolute;
+	top: 125px;
+	left: 5px;
+}
+.main-search form span{
+	position: absolute;
+	top: 124px;
+	left: 25px;
+}
+.main-search form a{
+	position: absolute;
+	right: 5px;
+	top: 128px;
+}
+.main-search form input[type^='butt']{
+	width: 270px;
+	height: 37px;
+	position: absolute;
+	top: 155px;
+	left: 1px;
+	border: 1px solid lightskyblue;
+	background-color: #0e90d2;
+	font-size: 16px;
+	color: white;
+	outline: none;
+	border-style: none;
+	cursor: pointer;
+}
+.alipay{
+	position: absolute;
+	width: 60px;
+	height: 20px;
+	top: 265px;
+	right: 50px;
+}
+#main-login .login-bottom{
+	width: 360px;
+	height: 39px;
+	background-color: #0e90d2;
+	text-align: center;
+	top: 290px;
+	position: absolute;
+}
+.login-bottom span{
+	line-height: 37px;
+	color:white;
+}
+/*main 结束*/
+
+
+/*footer 开始*/
+footer{
+	width: 100%;
+	height: auto;
+}
+#bottom{
+	width: 1000px;
+	height: 235px;
+	margin: 0 auto;
+	position: relative;
+}
+.bottom-nav{
+	position: absolute;
+	top: 100px;
+	width: 1000px;
+	height: 25px;
+	text-align: center;
+}
+.bottom-nav a{
+	margin-right: 20px;
+	font-size: 18px;
+}
+.bottom-nav i{
+	margin-right: 20px;
+}
+.bottom-info{
+	width: 1000px;
+	height: 62px;
+	position: absolute;
+	top: 150px;
+	text-align: center;
+	padding-top: 5px;
+}
+.bottom-info span{
+	font-size: 16px;
+	opacity: 0.6;
+}
+.bottom-info p{
+	font-size: 16px;
+	opacity: 0.6;
+	margin-top: 10px;
+}
+.bottom-info img{
+	position: absolute;
+	top: 3px;
+}
+
+/*footer 结束*/

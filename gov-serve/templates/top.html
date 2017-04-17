@@ -1,0 +1,41 @@
+<div id="top-div" ng-controller="DemoRegisterBox">
+    <div id="top-header">
+        <div class="header-text">
+            <span>智慧城市公共服务平台</span>
+            <img src="./images/1.png">
+        </div>
+        <div class="header-logo">
+            <img src="./images/logo.png">
+        </div>
+        <div class="header-search">
+            <form>
+                <input type="text" name="" placeholder="请输入你想要的服务">
+                <input type="submit" name="" value="">
+            </form>
+        </div>
+
+        <!--用户未登陆的盒子-->
+        <div class="header-login" ng-hide="ifValue">
+            <div class="header-login-text">
+                <img src="./images/login_img.png">
+                <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+            </div>
+            <ul>
+                <li class="registerButton"><a href="personal-register.html" target="_blank">登录</a></li>
+                <li class="loginButton"><a href="personal-login.html" target="_blank">注册</a></li>
+            </ul>
+        </div>
+
+        <!-- 用户已经登陆的盒子-->
+        <div class="header-login" ng-show="ifValue">
+            <div class="header-login-text">
+                <img src="./images/login_img.png">
+                <span>用&nbsp;&nbsp;户&nbsp;&nbsp;中&nbsp;&nbsp;心</span>
+            </div>
+            <div class="user-name">
+                <a href="user-center.html" target="_blank" class="username-text ng-cloak">{{username}}</a>
+            </div>
+            <div class="exit-butt" ng-click="exitFun()">退出</div>
+        </div>
+    </div>
+</div>

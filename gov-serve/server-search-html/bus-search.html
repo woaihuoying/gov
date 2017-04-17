@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <title>智慧城市公共服务平台</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel='icon' href=''>
+    <link rel='stylesheet' type='text/css' href='./same-css/reset-css.css'>
+    <link rel='stylesheet' type='text/css' href='./same-css/same-top-bottom.css'>
+    <link rel='stylesheet' type='text/css' href='./css/bus-search.css'>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <img src="./images/logo.png" class="logo-img">
+            <div class="phone-box">
+                <img src="./images/phone.png">
+                <span>热线电话：010-64140710</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-box" ng-controller="DemoBusSearch">
+            <div class="main-top-text">
+                <span style="opacity: 0.6">当前位置：</span>
+                <a href="../convenience-serve.html" target="_blank"><span>便民服务 > </span></a>
+                <span>长途汽车站查询</span>
+            </div>
+
+            <div class="main-img">
+                <img src="../images/bus_check.png" style="width: 1000px">
+            </div>
+
+            <form class="form-search">
+                <span>长途汽车站查询</span>
+                <input type="text" class="search-text" ng-model="cityName" name="" placeholder="请输入查询的城市-例如-北京">
+                <input type="button" class="search-butt" ng-click="busSearch()" name="" value="查询">
+            </form>
+
+            <!--查询结果-->
+            <div class="search-result">
+                <div class="search-result-text">查询结果</div>
+                <ul class="search-result-list">
+                    <li ng-repeat="city in cityArr">
+                        <div class='name1 ng-cloak'>{{city.name}}</div>
+                        <div class='tel1 ng-cloak'>{{city.tel}}</div>
+                        <div class='adds1 ng-cloak'>{{city.adds}}</div>
+                    </li>
+
+                </ul>
+
+                <!--&lt;!&ndash;加载动画&ndash;&gt;-->
+                <!--<div class="w-load">-->
+                    <!--<div class="spin"></div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </main>
+    <!-- main  结束-->
+
+
+
+    <!-- footer  开始-->
+    <footer>
+        <div id="bottom">
+            <div class="bottom-nav">
+                <a href="#" class="hintBox" onclick="hintFun()">把本站设为首页</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">关于智慧城市公共服务平台</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">本站申明</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">新手指南</a><span>|</span>
+                <a href="#" class="hintBox" onclick="hintFun()">联系我们</a>
+            </div>
+            <div class="bottom-info">
+                <span>主办单位：东华智慧研究院&nbsp;&nbsp;</span>
+                <span>备案：京ICP备12000333号-2&nbsp;&nbsp;</span>
+                <img src="./images/3.png">
+                <span class="bottom-text">&nbsp;&nbsp;&nbsp;&nbsp;京公网安备 33010602004556号 </span>
+                <p>中文域名：政务服务.政务 建议使用1366*768分辨率/IE9.0或以上浏览器访问达到最佳效果</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer  结束-->
+
+    <script src="./js/angular-1.6.2.js"></script>
+    <script src="./js/myapp.js"></script>
+
+
+</body>
+</html>

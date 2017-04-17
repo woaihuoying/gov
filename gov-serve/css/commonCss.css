@@ -1,0 +1,419 @@
+/*共用样式*/
+body{
+    background:#f3f3f3;
+}
+a{
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: none;
+}
+.ng-cloak{
+    display:none !important;
+}
+
+
+/*top  开始*/
+#top-div{
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+}
+#top-header{
+    width: 1000px;
+    height: 115px;
+    margin: 0 auto;
+    position: relative;
+}
+.header-text span{
+    float: right;
+    font-size: 14px;
+    opacity: 0.6;
+    margin-left: 5px;
+    margin-top: 3px;
+
+}
+.header-text img{
+    margin-top: 1.5px;
+}
+.header-text img{
+    float: right;
+}
+.header-logo{
+    position: absolute;
+    top: 40px;
+}
+
+.header-search{
+    width: 320px;
+    height: 37px;
+    position: absolute;
+    top: 48px;
+    left: 340px;
+}
+.header-search form input[type^='text']{
+    position: absolute;
+    display: inline-block;
+    width: 260px;
+    height: 34px;
+    outline: none;
+    border: 1px solid #e7e7e7;
+}
+.header-search form input[type^='sub']{
+    position: absolute;
+    width: 45px;
+    height: 36px;
+    right: 13.5px;
+    outline: none;
+    border-style: none;
+    background-image: url('../images/2.png');
+    cursor: pointer;
+}
+
+
+/*顶部用户登陆的盒子  控制显示与隐藏*/
+/*登陆的盒子*/
+.header-login{
+    position: absolute;
+    width: 220px;
+    height: 70px;
+    right: 1px;
+    top: 30px;
+}
+.header-login-text{
+    width: 200px;
+    height: 20px;
+}
+.header-login-text img{
+    position: absolute;
+    top: 2px;
+    left: 90px;
+}
+.header-login-text span{
+    position: absolute;
+    right: 1px;
+    font-size: 18px;
+    opacity: 0.6;
+}
+.registerButton{
+    position: absolute;
+    right: 80px;
+    width: 70px;
+    height: 36px;
+    display: inline-block;
+    background-color: #f3f3f3;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 36px;
+    border-radius: 12%;
+
+}
+.loginButton{
+    position: absolute;
+    right: 1px;
+    width: 70px;
+    height: 36px;
+    background-color: #f3f3f3;
+    display: inline-block;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 36px;
+    border-radius: 12%;
+
+}
+
+/*用户已经登陆的盒子*/
+.user-name{
+    position: absolute;
+    top: 27px;
+    right: 50px;
+}
+.username-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+.exit-butt{
+    position: absolute;
+    right: 1px;
+    top: 28px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 20px;
+    width: 45px;
+    height: 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 12%;
+}
+
+
+/*导航栏开始*/
+#nav1{
+    width: 100%;
+    height: 60px;
+    background-color: #6287cd;
+}
+#nav1_div{
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav_text0{
+    float: left;
+    width: 250px;
+    height: 60px;
+    background-color: #6287cd;
+}
+.nav_text1{
+    float: left;
+    width: 250px;
+    height: 60px;
+    background-color: #6287cd;
+}
+.nav_text4{
+    float: left;
+    width: 250px;
+    height: 60px;
+    background-color: #6287cd;
+}
+.nav_text2{
+    float: left;
+    width: 250px;
+    height: 60px;
+    background-color: #6287cd;
+}
+#nav1_div div a{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    line-height: 60px;
+
+}
+
+#nav1_div div:hover{
+    background-color: #bfcbe5;
+    color: #333333;
+}
+/*top  结束*/
+
+
+/*aside  悬浮框 开始*/
+#float-box{
+    width: 70px;
+    height: 460px;
+    position: fixed;
+    right: 50px;
+    top: 175px;
+    z-index: 999;
+}
+.list1{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.list2{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.list1-manual,.list1-phone{
+    position: absolute;
+    font-size: 15px;
+    top: 45px;
+    color: black;
+    opacity: 0.7;
+    left: 6px;
+}
+.list1 a{
+    position: absolute;
+    display: block;
+    font-size: 15px;
+    top: 45px;
+    color: black;
+    opacity: 0.7;
+    left: 6px;
+}
+.list1-phone{
+    margin-left: 8px;
+}
+.capacity-answers{
+    background: url('../images/sprites1.png') 0 0 no-repeat;
+}
+.consult-complaint{
+    background: url('../images/sprites1.png') 0 -71px no-repeat;
+}
+.move-phone{
+    background: url('../images/sprites1.png') 0 -213px no-repeat;
+}
+.operation-manual{
+    background: url('../images/sprites1.png') 0 -142px no-repeat;
+}
+.common-question{
+    background: url('../images/sprites1.png') 0 -284px no-repeat;
+}
+.return-top{
+    background: url('../images/sprites1.png') 0 -350px no-repeat;
+}
+.list1-img{
+    width: 150px;
+    height: 175px;
+    background-color: white;
+    position: absolute;
+    left: -155px;
+    top: -50px;
+    display: none;
+}
+.list1-img img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.list1-img p{
+    font-size: 14px;
+    opacity: 0.8;
+}
+.list1-web-app{
+    width: 150px;
+    height: 340px;
+    background-color: white;
+    position: absolute;
+    left: -155px;
+    top: -125px;
+    display: none;
+}
+#pack-up{
+    background: url('../images/sprites1.png') 0 -426px no-repeat;
+    height: 33px;
+}
+#pack-up a{
+    top: 13px;
+    left: 20px;
+    color: white;
+    font-weight: 700;
+}
+#unfold{
+    background: url('../images/sprites1.png') -1px -463px no-repeat;
+    height: 70px;
+    position: absolute;
+    display: none;
+}
+#unfold a{
+    position: absolute;
+    top: 47px;
+    left: 21px;
+    color: white;
+    font-weight: 700;
+}
+/*aside  悬浮框 结束*/
+
+
+/*攻城狮正在攻克的悬浮框*/
+#bg{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    /*IE下使用*/
+    filter: alpha(opacity=70);
+}
+#show{
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    width: 560px;
+    height: 260px;
+    padding: 8px;
+    border: 8px solid #E8E9F7;
+    background-color: #DDFFFF;
+    z-index:1002;
+}
+.close-img{
+    width: 50px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+}
+.hint-text{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    top: 120px;
+    left: 140px;
+}
+
+
+
+
+
+/*footer 开始*/
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: #e7e7e7;
+}
+#bottom{
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+.bottom-nav{
+    position: absolute;
+    top: 60px;
+    width: 1000px;
+    height: 25px;
+    text-align: center;
+}
+.bottom-nav a{
+    margin-right: 20px;
+    font-size: 18px;
+    color: black;
+    opacity: 0.8;
+}
+.bottom-nav a:hover{
+    color: #0099e2;
+}
+.bottom-nav span{
+    padding-right: 15px;
+}
+.bottom-nav i{
+    margin-right: 20px;
+}
+.bottom-info{
+    width: 1000px;
+    height: 62px;
+    position: absolute;
+    top: 110px;
+    text-align: center;
+    padding-top: 5px;
+}
+.bottom-info span{
+    font-size: 16px;
+    opacity: 0.6;
+}
+.bottom-info p{
+    font-size: 16px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+.bottom-info img{
+    position: absolute;
+    top: 3px;
+}
+/*footer 结束*/
+

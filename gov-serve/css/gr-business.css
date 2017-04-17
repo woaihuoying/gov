@@ -1,0 +1,272 @@
+/*main  开始*/
+#main{
+    width: 100%;
+    height: auto;
+    background-image: url("../images/bg_main.jpg");
+}
+#main-box{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.location{
+    width: 200px;
+    height: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+}
+.main-left{
+    width: 236px;
+    height: 500px;
+    position: absolute;
+    top: 38px;
+}
+.left-text1,.left-text2{
+    width: 118px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.left-text1{
+    background-color: #1492ff;
+}
+.left-text2{
+    background-color: #e7e7e7;
+}
+
+.themegr-click{
+    width: 118px;
+    height: 31px;
+    background-color: #ffffff;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 13px;
+    line-height: 31px;
+    cursor: pointer;
+}
+.branch-click{
+
+
+    width: 118px;
+    height: 31px;
+    background-color: #ffffff;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 13px;
+    line-height: 31px;
+    cursor: pointer;
+}
+.main-search {
+    position: absolute;
+    top: 42px;
+    width: 745px;
+    height: 30px;
+    right: 5px;
+}
+.main-search form span{
+    font-size: 15px;
+    opacity: 0.8;
+    line-height: 30px;
+}
+.main-search form input[type^='tex']{
+    font-size: 14px;
+    width: 208px;
+    height: 27px;
+    outline: none;
+    border: 1px solid #e7e7e7;
+}
+.main-search form input[type^='sub']{
+    width: 40px;
+    height: 27.5px;
+    background-color: deepskyblue;
+    color: white;
+    font-weight: 700;
+    top: 2px;
+    position: absolute;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+}
+.radio-text1{
+    position: absolute;
+    top: 10px;
+    right: 212px;
+}
+.form-text1{
+    position: absolute;
+    line-height: 31px;
+    right: 130px;
+}
+.radio-text2{
+    position: absolute;
+    top: 10px;
+    right: 90px;
+}
+.form-text2{
+    position: absolute;
+    line-height: 31px;
+    right: 10px;
+}
+.hot-work{
+    width: 745px;
+    height: 610px;
+    position: absolute;
+    top: 83px;
+    right: 5px;
+}
+.server-text{
+    position: absolute;
+    width: 745px;
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    color: #6287cd;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.hot-work input[type^='che']{
+    position: absolute;
+    right: 110px;
+    top: 18px;
+}
+.server-text span{
+    float: right;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.list-work{
+    padding-top: 60px;
+}
+.list-work li{
+    width: 743px;
+    height: 55px;
+    background-color: white;
+    margin-bottom: 15px;
+    position: relative;
+}
+.list-work li a{
+    font-size: 15px;
+    color: black;
+    line-height: 55px;
+    margin-left: 15px;
+}
+.list-work li a:hover{
+    color: #1492ff;
+    text-decoration: none;
+}
+.guide-ico{
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    width: 86px;
+    height: 24px;
+    background-image: url('../images/35.png');
+}
+.online-ico{
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    width: 86px;
+    height: 24px;
+    background-image: url('../images/36.png');
+}
+.guide-ico a,.online-ico a{
+    position: absolute;
+    left: 9px;
+    top: -15px;
+}
+.guide-ico a:hover{
+    color: #1492ff;
+    text-decoration: none;
+}
+
+.page-number{
+    width: 745px;
+    height: 35px;
+    position: absolute;
+    right: 5px;
+    bottom: 50px;
+}
+.page-number-list li{
+    width: 38px;
+    height: 30px;
+    margin-right: 20px;
+    float: left;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 15%;
+}
+.page-number-list li a{
+    font-size: 14px;
+    line-height: 30px;
+    color: black;
+}
+/*main  结束*/
+
+
+/*提示登陆的盒子*/
+#bg-login{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    /*IE下使用*/
+    filter: alpha(opacity=70);
+}
+#show-login{
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    width: 560px;
+    height: 260px;
+    padding: 8px;
+    border: 8px solid #E8E9F7;
+    background-color: #DDFFFF;
+    z-index:1002;
+}
+.close-login-img{
+    width: 50px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+}
+.close-hint-text{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.show-login-list{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    left: 180px;
+    top: 80px;
+    text-align: center;
+}
+.show-login-list li{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #3fa9f5;
+}

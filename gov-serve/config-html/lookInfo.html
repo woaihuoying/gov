@@ -1,0 +1,58 @@
+<div class="main-amend" id="check-user-info" ng-controller="DemolookInfo">
+    <div class="main-amend-text">账户信息</div>
+    <!--查看用户信息-->
+    <ul class="amend-list">
+        <!--<li>-->
+        <!--<img src="../images/90.png">-->
+        <!--<span class="list-info1">用户名</span>-->
+        <!--<span class="list-info2">ceshihao</span>-->
+        <!--</li>-->
+        <li>
+            <img src="./images/96.png">
+            <span class="list-info1">昵称</span>
+            <span class="list-info2 edit-after-name ng-cloak">{{lookUserInfo.name}}</span>
+        </li>
+        <li>
+            <img src="./images/91.png">
+            <span class="list-info1">账户密码</span>
+            <span class="list-info2">******</span>
+            <a href="change-password.html" class="pass-amend-text ng-cloak">修改</a>
+        </li>
+        <li>
+            <img src="./images/92.png">
+            <span class="list-info1">手机号码</span>
+            <span class="list-info2 edit-after-phone ng-cloak">{{lookUserInfo.phone}}</span>
+        </li>
+        <li>
+            <img src="./images/96.png">
+            <span class="list-info1">固定电话</span>
+            <span class="list-info2 edit-after-tel ng-cloak">{{lookUserInfo.mobile}}</span>
+        </li>
+        <li>
+            <img src="./images/93.png">
+            <span class="list-info1">实名认证</span>
+            <span class="list-info2 edit-after-idcard ng-cloak">{{lookUserInfo.idCard}}</span>
+        </li>
+        <li>
+            <img src="./images/94.png">
+            <span class="list-info1">邮箱</span>
+            <span class="list-info2 edit-after-email ng-cloak">{{lookUserInfo.email}}</span>
+        </li>
+        <li>
+            <img src="./images/96.png">
+            <span class="list-info1">性别</span>
+            <span class="list-info2 edit-after-sex ng-cloak">{{lookUserInfo.userSex}}</span>
+        </li>
+        <li>
+            <img src="./images/97.png">
+            <span class="list-info1">个性签名</span>
+            <span class="list-info2 edit-after-signature ng-cloak">{{lookUserInfo.signature}}</span>
+        </li>
+        <li>
+            <img src="./images/95.png">
+            <span class="list-info1">账户安全</span>
+            <span class="list-info2">低</span>
+            <span class="list-info3">我要升级</span>
+        </li>
+    </ul>
+</div>
